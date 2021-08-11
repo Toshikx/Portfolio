@@ -1,0 +1,201 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+
+/* fonst */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+html {
+  font-family: "Open sans", sans-serif;
+  color: #4d4e53;
+}
+
+/* navigation */
+nav {
+  position: fixed;
+  left: 20px;
+  border-right: 3px solid rgba(0, 22, 22, 0.4);
+  max-width: 300px;
+  width: 300px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  list-style-type: none;
+}
+
+.nav-menu {
+  border-top: 1px solid rgba(0, 22, 22, 0.4);
+  cursor: pointer;
+  font-size: 1.25em;
+  padding: 10px;
+}
+
+.nav-link {
+  color: #4d4e53;
+  text-decoration: none;
+}
+nav header {
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+}
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+/* content */
+.sections {
+  font-size: 0.96em;
+  line-height: 1.5;
+  width: 95%;
+}
+
+.sections header {
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align-last: left;
+}
+
+.sections p {
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+.pageUl {
+  margin-left: 5%;
+  width: 90%;
+}
+
+.pageUl li {
+  margin-bottom: 25px;
+}
+
+code {
+  display: block;
+  margin-left: 35px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  line-height: 2;
+}
+
+.pLike {
+  display: block;
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+.referenceLink {
+  text-decoration: underline;
+}
+
+.innerUl {
+  margin: 15px auto 15px 5%;
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 400px) {
+  body, html {
+    margin-left: -150px;
+  }
+  #navbar {
+    font-size: 0.59em;
+    border: 3px solid;
+    position: static;
+  }
+  #navbar ul {
+    text-decoration: none;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: auto;
+  }
+  .nav-link {
+    text-decoration: none;
+  }
+  #main-doc {
+    
+  }
+  .spans {
+    
+  }
+}
