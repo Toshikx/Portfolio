@@ -164,11 +164,10 @@ body {
 }
 
 #projects h2 {
-  min-width: 640px;
+  width: 60%;
   margin: 0 auto 6rem auto;
   color: white;
   font-size: 4.2rem;
-  max-width: 850px;
   border-bottom: 2px solid #fff;
 }
 
@@ -189,9 +188,9 @@ body {
 .project-title {
   display: inline-block;
   border-radius: 2px;
-  box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+  box-shadow: 1px 1px 2px rgba(0 0 0 0.5);
   background-color: var(--main-gray);
-  max-width: calc(100%-8rem);
+  max-width: calc(100%- 8rem);
 }
 
 .project-title a {
@@ -338,15 +337,28 @@ footer {
   color: white;
 }
 
-@media screen and (max-width: 500px) {
+@media(max-width: 640px) {
   .container {
-    max-width: 400px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    /* overflow: hidden; */
+    
   }
-  .projects-grid {
+  #header{
+    justify-content: space-evenly;
+    font-siz: 0.5rem;
+  }
+  .projects-grid{
+    grid-template-columns: 1fr;
+  }
+  .contact{
+    margin-top: 15%;
+    margin-bottom: 10%;
+  }
+  .contact-links{
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    margin-left: -15%;
+    
   }
 }
