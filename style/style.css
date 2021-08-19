@@ -164,7 +164,7 @@ body {
 }
 
 #projects h2 {
-  width: 60%;
+  width: 40%;
   margin: 0 auto 6rem auto;
   color: white;
   font-size: 4.2rem;
@@ -219,17 +219,15 @@ a:hover .code {
 
 .moreInfo {
   background-color: var(--main-gray);
+  font-size: 2.2rem;
   color: white;
-  padding: 10px;
+  padding: 10px 10px 10px 25px;
   display: inline-block;
   margin: 85px auto 0 auto;
-}
-
-.moreInfo {
-  position: relative;
+  align-self: center;
   text-align: center;
   align-items: center;
-  max-width: 150px;
+  max-width: 15rem;
   display: flex;
   transition: opacity 1s linear;
 }
@@ -340,25 +338,71 @@ footer {
 @media(max-width: 640px) {
   .container {
     /* overflow: hidden; */
-    
+    max-width: 100%;
   }
   #header{
-    justify-content: space-evenly;
-    font-siz: 0.5rem;
+    background-color: var(--main-red);
+    width: 100%;
+  }
+  #nav{
+    width: 100%;
+  }
+  #navbar{
+    margin-right: 0;
+    min-height: none;
+  }
+  #header a{
+    font-size: 1.5rem;
+  }
+  #welcome-section{
+    height: 100vh;
+  }
+  #welcome-section h1{
+    font-size: 2.75rem;
+  }
+  #welcome-section span{
+    font-size: 1.5rem;
+  }
+  #projects h2{
+    font-size: 2.5rem;
+    width: 90%;
   }
   .projects-grid{
     grid-template-columns: 1fr;
   }
+  .code{
+    color: orange;
+  }
+  #projects figcaption{
+    font-size: 1.25rem;
+  }
+  .moreInfoArrow{
+    position: inherit;
+  }
+  .moreInfo{
+    font-size: 1.25rem;
+    width: 45%;
+  }
+  .contact h2{
+    font-size: 2.5rem;
+    width: 110%;
+  }
+  .contact_description {
+    font-size: 1.2rem;
+  }
   .contact{
-    margin-top: 15%;
-    margin-bottom: 10%;
+    height: 60vh;
   }
   .contact-links{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-
-    margin-left: -15%;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .figure_row:hover{
+    animation: none;
+  }
+  footer{
+    font-size: 1.2rem;
     
   }
 }
